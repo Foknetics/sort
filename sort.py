@@ -1,9 +1,13 @@
+"""sort.py sorts files in the sourcepath into the sortedpath with year/day/month folders."""
+
 import os
 import shutil
 import datetime
 
-sourcepath = 'C:/Users/Default/Pictures' #set this to the source directory
-sortedpath = 'C:/Users/Default/Pictures' #set this to the final location directory
+# set this to the source directory
+sourcepath = 'C:/Users/Default/Pictures'
+# set this to the final location directory
+sortedpath = 'C:/Users/Default/Pictures'
 
 for root, dirs, files in os.walk(sourcepath):
     for name in files:
